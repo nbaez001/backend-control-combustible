@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body>
+
+	<div class="container py-4">
+
+		<div class="card text-black">
+			<div class="card-header" th:text="${titulo}"></div>
+			<div class="card-body text-center">
+				<h5 class="card-title justify-content-between">
+					<img th:src="@{/images/404.png}" /><br>
+					Lo sentimos página no econtrada!
+				</h5>
+				
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

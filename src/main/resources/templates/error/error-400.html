@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body>
+	<div class="container py-4">
+		
+		<div class="card bg-danger text-white">
+			<div class="card-header" th:text="${titulo}"></div>
+			<div class="card-body">
+				
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-success">
+    					<div>
+      						<h5>Time</h5>
+    					</div>
+  					</a>
+  					<a href="#" class="list-group-item">
+    					<div class="d-flex w-100 justify-content-between">
+      						<p th:text="${time}"></p>
+    					</div>
+  					</a>
+  					<a href="#" class="list-group-item list-group-item-primary">
+    					<div>
+      						<h5>Status</h5>
+    					</div>
+  					</a>
+  					<a href="#" class="list-group-item">
+    					<div class="d-flex w-100 justify-content-between">
+      						<p th:text="${status}"></p>
+    					</div>
+  					</a>	
+  					<a href="#" class="list-group-item list-group-item-danger">
+    					<div>
+      						<h5>Error</h5>
+    					</div>
+  					</a>
+  					<a href="#" class="list-group-item">
+    					<div class="d-flex w-100 justify-content-between">
+      						<p th:text="${error}"></p>
+    					</div>
+  					</a>
+  					<a href="#" class="list-group-item list-group-item-secondary">
+    					<div class="d-flex w-100 justify-content-between">
+      						<h5 class="mb-1">Message</h5>
+    					</div>
+  					</a>
+  					<a href="#" class="list-group-item">
+    					<div class="d-flex w-100 justify-content-between">
+      						<p th:text="${message}"></p>
+    					</div>
+  					</a>
+  					<a href="#" class="list-group-item list-group-item-warning">
+    					<div class="d-flex w-100 justify-content-between">
+      						<h5 class="mb-1">Trace</h5>
+    					</div>
+  					</a>
+  					<a href="#" class="list-group-item">
+    					<div class="d-flex w-100 justify-content-between">
+    						<textarea rows="20" cols="150" th:text="${trace}">
+    						</textarea>
+    					</div>
+  					</a>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
